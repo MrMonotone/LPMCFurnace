@@ -1,0 +1,28 @@
+author: MrMonotone
+database: false
+description: Sends a message to player when your items are done in the selected furnace or if
+ the furnace needs more fuel or your furnace needs more material.
+main: me.mrmonotone.plugins.lpmcfurnace.LPMCFurnace
+name: LPMCFurnace
+startup: postworld
+version: '1.5'
+commands:   
+    setfurnace:
+        description: Sets the Furnace that the plugin will focus on.
+        usage: /setfurnace
+permissions:  
+    lpmcfurnace.*:
+        default: op
+        description: Gives access to all LPMCfurnace commands
+        children:
+            lpmcfurnace.userdefaults: true           
+    lpmcfurnace.userdefaults:
+        default: notop
+        descrtipion: Gives access to selecting a furnace and sending messages
+        children:
+            lpmcfurnace.message: true
+            lpmcfurnace.selectfurnace: true           
+    lpmcfurnace.message:
+        description: Allows messages to be sent to player. 
+    lpmcfurnace.selectfurnace:
+        description: Allows furnaces to selected by the player. 

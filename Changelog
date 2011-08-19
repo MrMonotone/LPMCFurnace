@@ -1,0 +1,17 @@
+V1.0:
+-Plugin release
+V1.1:
+-Updated sending "Status" updates
+V1.5:
+-LPMCFurnace is now togglable!(use the command again if you disable you will have to set the furnace again
+-Status messages optimized!
+-Config file added
+Config:
+Bucket return added
+Clocks have been added to the config file
+-clock needed in hand to select furnace
+-clock needed in inventory to recieve messages
+-Permissions added
+Permissions (see Permisions dropdown):
+Permissions added for messages
+Permissions added for selecting furnace
